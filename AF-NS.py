@@ -51,7 +51,7 @@ if __name__ == '__main__':
     cluster_cmd = 'minimap2 -t ' + args.t + ' -x ava-ont -o ' + args.o + '/tmp/overlap.paf ' + args.o + '/tmp/novel_tmp.fa ' + args.o + '/tmp/novel_tmp.fa'
     sp.call(cluster_cmd, shell=True)
     sp.call([sys.executable, 'bin/cluster.py', args.o +'/tmp/', args.cov])
-    repeat_cmd = 'RepeatMasker -pa ' + args.t + ' -s  -species ' + args.rp_species ' + args.o + '/tmp/cluster.fa  -dir ' + args.o + '/tmp/repeatmasker'
+    repeat_cmd = 'RepeatMasker -pa ' + args.t + ' -s  -species ' + args.rp_species +' ' +  args.o + '/tmp/cluster.fa  -dir ' + args.o + '/tmp/repeatmasker'
     sp.call(repeat_cmd, shell=True)
     repeat_bed = ''' awk 'OFS="\t"{if($11=="Simple_repeat" || $11=="Low_complexity") print $5, $6-1, $7}' ''' + args.o + '/tmp/repeatmasker/cluster.fa.out |bedtools sort -i - |bedtools merge -i -  > ' + args.o + '/tmp/repeat.bed'
     sp.call(repeat_bed, shell=True)
