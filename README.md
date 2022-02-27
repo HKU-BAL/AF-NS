@@ -3,6 +3,7 @@ Identification of long-read novel sequences
 
 # Prerequisites 
 Make sure you have installed all of the following prerequisites on your machine：<br> 
+• python2 <br> 
 •	minimap2 <br> 
 •	NUCmer <br> 
 •	porechop<br> 
