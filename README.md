@@ -13,6 +13,8 @@ Make sure you have installed all of the following prerequisites on your machineï
 
 # Run
 python AF-NS.py -kraken_db NAME -i input.fq -r ref.fa -o output_folder <br> 
+## output
+Novel sequences: output_folder/novel.fa
 
 
 
