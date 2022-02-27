@@ -62,19 +62,3 @@ if __name__ == '__main__':
 
 
 
-
-#    bed_cmd = '''awk 'OFS="\t"{print $1, $3, $4}' ''' + args.o+'/tmp/3rd.paf | bedtools sort -i - | bedtools subtract -a ' +  args.o + "/tmp/novel_2nd.bed -b - > " + args.o+'/tmp/3rd_remain.bed'   
- #   sp.call(bed_cmd,shell=True)
-  #  sp.call([sys.executable, 'bin/filter.py',args.o +'/tmp/', "novel_2nd.fa", "3rd_remain.bed", 'novel_3rd', args.l])   
-  #  read_cmd = ["awk '{OFS='\t'}{print $1, 0, $2}' " +  args.o + '/tmp/read2ref.paf' + '| sort | uniq | bedtools sort -i - ']
- #   subprocess.call(read_cmd, stdout=open(args.tmp+'/reads.bed','w')
-#    alignbed_cmd = [" grep -v '*' " + args.o + "/tmp/read2ref.paf |awk '{OFS='\t'}{print $1, $3, $4}' " ]
-#    alignbed_cmd = [ "awk '{OFS='\t'}{print $1, $3, $4}' "  + args.o + "/tmp/read2ref.paf" ]
-
-#    print alignbed_cmd
- #   sp.call(alignbed_cmd,stdout=open(args.o+'/tmp/maps.bed','w'), shell=True)
- #   select_cmd = ['bedtools sort -i' + args.tmp+'/tmp/maps.bed |bedtools merge -i - |bedtools subtract -a ' + args.tmp+'/reads.bed' + " -b - " ]
-  #  subprocess.call(select_cmd, stdout=open(args.tmp+'/tmp
-
-
-
