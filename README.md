@@ -1,7 +1,7 @@
 # AF-NS
 # Introduction
 Workflow for identifying long-read novel sequences
-![Workflow](http://www.bio8.cs.hku.hk/RNA/tmp/AF-NS.png)<br> 
+![Workflow](http://www.bio8.cs.hku.hk/novel/tmp/AF-NS.png)<br> 
 
 # Prerequisites 
 Make sure you have installed all of the following prerequisites on your machine：<br> 
