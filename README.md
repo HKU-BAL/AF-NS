@@ -19,7 +19,7 @@ python AF-NS.py -kraken_db db_folder -i input.fq -r ref.fa -o output_folder <br>
 
 ## kraken2 DB for human
 We build kraken2 DB including archaea, bacteria, fungi, plasmid, viral and UniVec datasets, the link is as follows <br> 
-https://www.bio8.cs.hku.hk/RNA/kraken2_db.tar
+https://www.bio8.cs.hku.hk/novel/kraken2_db.tar
 
 ## output
 Novel sequences: output_folder/novel.fa
